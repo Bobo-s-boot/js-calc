@@ -13,6 +13,8 @@ class Calc {
       }
     }
 
+    console.log(this.#value)
+
     this.#value = this.#value.concat(newValue)
     this.#output()
   }
@@ -73,6 +75,8 @@ class Calc {
   }
 }
 
-Calc.init()
+document.addEventListener('DOMContentLoaded', function () {
+  Calc.init()
+})
 
 window.calc = Calc
